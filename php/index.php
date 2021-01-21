@@ -7,11 +7,116 @@
 	<link rel="stylesheet" href="../css/w3.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/estilo.min.css" />
-	<link rel="stylesheet" type="text/css" href="../css/login.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/login.css" />
 	<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<script>
+		/*
+			Funçao para gerar o formulário de forma assincrona
+			Parâmetros:
+				tipo: tipo de formulário
+					'login' - formulário de login
+					'cadastro' - formulário de cadastro
+		*/
+		function geraForm(tipo){
+			if(tipo == 'login'){
+				var HTML = '<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">email</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="email" placeholder="E-mail">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="senha" placeholder="Senha">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-check">'
+							+'<input class="form-check-input" type="checkbox" id="lembrar_senha">'
+							+'<label class="form-check-label" for="lembrar_senha">Lembrar-se</label>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<br/>'
+				+'<button type="button" class="btn-block btn-dark">Entrar</button>';
+
+				document.getElementById('avisoFooter').innerHTML = 'Novo na plataforma? <a href="#" onclick = "geraForm(\'cadastro\')"> Registrar-se </a>';
+			}else if(tipo == 'cadastro'){
+				var HTML = '<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">email</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="email" placeholder="E-mail">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="nomeUsuario" placeholder="Nome de usuário">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="senha" placeholder="Senha">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<div class="row">'
+					+'<div class="col-sm-12">'
+						+'<div class="form-group">'
+							+'<div class="input-group">'
+								+'<div class="input-group-prepend">'
+									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+								+'</div>'
+								+'<input type="text" class="form-control" id="senhaConfirmada" placeholder="Confirmar senha">'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+				+'</div>'
+				+'<br/>'
+				+'<button type="button" class="btn-block btn-dark">Entrar</button>';
+
+				document.getElementById('avisoFooter').innerHTML = 'Já se cadastrou? <a href="#" onclick = "geraForm(\'login\')">Faça Login</a>';
+			}
+
+			document.getElementById('form_index').innerHTML = HTML;
+		}
+	</script>
 </head>
-<body>
+<body onload = "geraForm('login')">
 	<div class="fundo w3-display-container w3-animate-opacity w3-text-white">
 		<div class="w3-display-topleft w3-padding-large w3-xlarge">
 			TCC
@@ -22,44 +127,12 @@
 			<div class="card text-center w3-animate-top">
 				<div class="card-body">
 					<form id = "form_index" name="form_index">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<div class="input-group-text"><i class = "material-icons">email</i></div>
-										</div>
-										<input type="text" class="form-control" id="email" placeholder="E-mail">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<div class="input-group-text"><i class = "material-icons">lock</i></div>
-										</div>
-										<input type="text" class="form-control" id="senha" placeholder="Senha">
-									</div>
-								</div>
-							</div>						
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="lembrar_senha">
-									<label class="form-check-label" for="lembrar_senha">Lembrar-se</label>							
-								</div>
-							</div>
-						</div>
-						<br/> 
-						<button type="button" class="btn-block btn-dark">Entrar</button>	
+						<!--O HTML da função geraForm é criado aqui-->
 					</form>
 				</div>
-				<div class="card-footer text-muted">
-					Novo na plataforma? <a href="cadastro.php"> Registrar-se </a>
+				<div id = "avisoFooter" class="card-footer text-muted">
+					<!--Novo na plataforma? <a href="cadastro.php"> Registrar-se </a>-->
+					Novo na plataforma? <a href="#" onclick = "geraForm('cadastro')"> Registrar-se </a>
 				</div>
 			</div>
 
@@ -70,4 +143,4 @@
 		</div>
 	</div>
 </body>
-</html>		
+</html>
