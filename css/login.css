@@ -1,0 +1,28 @@
+body,h1 {
+    font-family: "Raleway", sans-serif
+}
+body, html {
+    height: 100%
+}
+.fundo {
+    background-color:#E67E22 ;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+label{
+    color:black;
+}
+
+a{
+    color: #E67E22;
+}
+
+a:hover {
+  color: black;
+}
+
+@media screen{
+   
+}
