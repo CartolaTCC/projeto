@@ -25,7 +25,7 @@
 			<h1 class="text-center"><b>ESCALAÇÃO AUTOMÁTICA</b></h1>
 
       <div id="form_filtro" class="container">
-				<form id="filtrar_escalacao" action="escalacaoFiltrada.php" method="POST">
+				<form id="filtrar_escalacao" action="escalacao.php" method="POST">
 	          <table class="filtro">
 	            <thead>
 	              <tr>
@@ -79,15 +79,15 @@
 
       <div id="escalacao" class="container escalacao">
         <!--Escalação-->
-				<table class="table table-hover">
-        <div class="form-group">
-          <thead>
-            <tr>
-              <div class="row">
-                <th>
-                  Posição
-                </th>
-                <th>
+        <table class="table table-hover">
+         <div class="form-group">
+           <thead>
+             <tr>
+               <div class="row">
+                 <th>
+                   Posição
+                 </th>
+                 <th>
                    Jogador
                  </th>
                  <th>
@@ -100,156 +100,156 @@
              <tr>
                <div class="row">
                  <td>
-                   -
+                   GOL
                  </td>
                  <td>
-                   -
+                   A
                  </td>
                  <td>
-                   C$0.00
-                 </td>
-               </div>
-             </tr>
-             <tr>
-               <div class="row">
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   C$0.00
+                   C$23.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   LAT
                  </td>
                  <td>
-                   -
+                   B
                  </td>
                  <td>
-                   C$0.00
-                 </td>
-               </div>
-             </tr>
-             <tr>
-               <div class="row">
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   C$0.00
+                   C$15.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   LAT
                  </td>
                  <td>
-                   -
+                   C
                  </td>
                  <td>
-                   C$0.00
-                 </td>
-               </div>
-             </tr>
-             <tr>
-               <div class="row">
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   C$0.00
+                   C$8.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   ZAG
                  </td>
                  <td>
-                   -
+                   D
                  </td>
                  <td>
-                   C$0.00
-                 </td>
-               </div>
-             </tr>
-             <tr>
-               <div class="row">
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   C$0.00
+                   C$15.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   ZAG
                  </td>
                  <td>
-                   -
+                   E
                  </td>
                  <td>
-                   C$0.00
-                 </td>
-               </div>
-             </tr>
-             <tr>
-               <div class="row">
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   -
-                 </td>
-                 <td>
-                   C$0.00
+                   C$11.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   MEI
                  </td>
                  <td>
-                   -
+                   F
                  </td>
                  <td>
-                   C$0.00
+                   C$6.00
                  </td>
                </div>
              </tr>
              <tr>
                <div class="row">
                  <td>
-                   -
+                   MEI
                  </td>
                  <td>
-                   -
+                   G
                  </td>
                  <td>
-                   C$0.00
+                   C$4.00
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <div class="row">
+                 <td>
+                   MEI
+                 </td>
+                 <td>
+                   H
+                 </td>
+                 <td>
+                   C$5.00
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <div class="row">
+                 <td>
+                   ATA
+                 </td>
+                 <td>
+                   I
+                 </td>
+                 <td>
+                   C$3.00
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <div class="row">
+                 <td>
+                   ATA
+                 </td>
+                 <td>
+                   J
+                 </td>
+                 <td>
+                   C$7.00
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <div class="row">
+                 <td>
+                   ATA
+                 </td>
+                 <td>
+                   K
+                 </td>
+                 <td>
+                   C$3.00
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <div class="row">
+                 <td>
+                   TEC
+                 </td>
+                 <td>
+                   L
+                 </td>
+                 <td>
+                   C$2.00
                  </td>
                </div>
              </tr>

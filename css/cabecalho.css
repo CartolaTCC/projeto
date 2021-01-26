@@ -7,12 +7,12 @@
   padding-left: 41%;
 }
 
-.escalacao{
+.linkEscalacao{
   color: black;
-  padding-right: 45%;
+  padding-right: 38%;
 }
 
-.ranking:hover, .escalacao:hover {
+.ranking:hover, .linkEscalacao:hover{
   font-weight: bolder;
   color: black;
 }
