@@ -1,0 +1,22 @@
+.cabecalho{
+  background-color: #E67E22;
+}
+
+.ranking{
+  color: black;
+  padding-left: 41%;
+}
+
+.escalacao{
+  color: black;
+  padding-right: 45%;
+}
+
+.ranking:hover, .escalacao:hover {
+  font-weight: bolder;
+  color: black;
+}
+
+.cartola{
+  width: 100%;
+}
