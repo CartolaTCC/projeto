@@ -5,3 +5,15 @@ body,h1 {
 body, html {
     height: 100%;
 }
+
+/*Estilos utilizados no cabeçalho*/
+.cabecalho{
+  background-color: #E67E22;
+}
+.ranking, .linkEscalacao{
+  color: black;
+}
+.ranking:hover, .linkEscalacao:hover{
+  font-weight: bolder;
+  color: black;
+}
