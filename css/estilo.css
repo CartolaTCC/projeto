@@ -19,3 +19,20 @@ body, html {
 .pageTitle{
     margin-top: 50px;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}

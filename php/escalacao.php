@@ -14,6 +14,7 @@
 
 	<script src = '../js/jquery-3.5.1.min.js'></script>
 	<script src = "../js/bootstrap.min.js" ></script>
+	<script src = "../js/popper.min.js"></script>
 
 	<title>Projeto - TCC</title>
 </head>
@@ -318,5 +319,15 @@
        </table>
       </div>
   </main>
+
+  <!--Footer-->
+  <footer id = "sticky-footer" class = "py-4">
+	  <hr/>
+	  <p class = "text-center">Precisa de ajuda? leia nossa <a href = "sobre.php">documentação</a> ou entre em contato com os desenvolvedores através de um desses e-mails:</p>
+
+	  <p class = "text-center">Amanda Ancelmo: amandabolattoancelmo@gmail.com</p>
+	  <p class = "text-center">Renan Martins: renan2204@outlook.com</p>
+	  <p class = "text-center">Yuri Kanegae: yurikanegae@gmail.com</p>
+  </footer>
 </body>
 </html>
