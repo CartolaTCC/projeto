@@ -44,7 +44,7 @@
 									+'<div class="input-group-prepend">'
 										+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
 									+'</div>'
-									+'<input type="text" class="form-control" id="senha" placeholder="Senha" required>'
+									+'<input type="password" class="form-control" id="senha" placeholder="Senha" required>'
 								+'</div>'
 							+'</div>'
 						+'</div>'
@@ -80,7 +80,7 @@
 						+'<div class="form-group">'
 							+'<div class="input-group">'
 								+'<div class="input-group-prepend">'
-									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+									+'<div class="input-group-text"><i class = "material-icons">account_circle</i></div>'
 								+'</div>'
 								+'<input type="text" class="form-control" id="nomeUsuario" placeholder="Nome de usuário">'
 							+'</div>'
@@ -94,7 +94,7 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
 								+'</div>'
-								+'<input type="text" class="form-control" id="senha" placeholder="Senha">'
+								+'<input type="password" class="form-control" id="senha" placeholder="Senha">'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -106,13 +106,13 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
 								+'</div>'
-								+'<input type="text" class="form-control" id="senhaConfirmada" placeholder="Confirmar senha">'
+								+'<input type="password" class="form-control" id="senhaConfirmada" placeholder="Confirmar senha">'
 							+'</div>'
 						+'</div>'
 					+'</div>'
 				+'</div>'
 				+'<br/>'
-				+'<button type="submit" class="btn-block btn-dark">Cadastrar</button>';
+				+'<a href="index.php"> <button type="submit" class="btn-block btn-dark">Cadastrar</button> </a>';
 
 				document.getElementById('avisoFooter').innerHTML = 'Já se cadastrou? <a href="#" onclick = "geraForm(\'login\')">Faça Login</a>';
 			}
