@@ -1,0 +1,3 @@
+<?php
+  define("SESSAO", "login");
+?>

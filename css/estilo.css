@@ -1,25 +1,10 @@
+/*Estilos padrão para todas as páginas*/
 body,h1 {
     font-family: "Raleway", sans-serif;
 }
-
 body, html {
     height: 100%;
 }
-
-/*Estilos utilizados no cabeçalho*/
-.cabecalho{
-  background-color: #E67E22;
-}
-
-.ranking:hover, .linkEscalacao:hover{
-  font-weight: bolder;
-  color: black;
-}
-
-.pageTitle{
-    margin-top: 50px;
-}
-
 html {
   position: relative;
   min-height: 100%;
@@ -27,12 +12,129 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
+a{ /*Links*/
+    color: #E67E22;
+}
+a:hover {
+  color: black;
+}
+@media screen{
+
+}
+.pageTitle{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/*Estilos utilizados no cabeçalho*/
+.cabecalho, .cabecalhoTable, .fundo, .corBotao{ /*cabeçalho da página, cabeçalho das tabelas, fundo da página do index,
+  botão para filtrar a escalação, para salvar as alterações do perfil e para sincronizar com a conta no goole*/
+  background-color: #E67E22;
+}
+.ranking:hover, .linkEscalacao:hover{
+  font-weight: bolder;
+  color: black;
+}
+
+/*Estilos utilizados no rodapé*/
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
 #sticky-footer {
   flex-shrink: none;
+}
+
+/*Estilo do fundo da página de login e cadastro*/
+.fundo {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Estilos da página home*/
+.jogo_container{ /*Container de cada jogo (informações do time e dos resultado)*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.escudoTime{ /*Imagem dos esculos dos times*/
+  width: 100px;
+  margin: 10px;
+}
+.infoJogo{ /*Informações do time e dos resultados de cada jogo*/
+  font-size: 140%;
+}
+
+/*Estilos utilizados na página de escalação*/
+.escalacao{
+  width: 36%;
+  margin-left: 32%;
+  padding-bottom: 5%;
+}
+.btnFiltroEscalacao{
+  box-shadow: 0 0 0.1em black;
+  width: 100%;
+}
+.tableEscalacao{
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+}
+.tdEscalacao{
+  padding: 2.5%;
+}
+
+/*Estilos utilizados na página de Ranking*/
+.tableRanking{
+    margin-top: 20px;
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+}
+.thRanking{
+  padding:1%;
+}
+
+/*Estilos utilizados na página de perfil*/
+.fotoPerfil{
+  width: 90%;
+  margin-top: -15%;
+}
+.editarFotoPerfil{
+  width: 100%;
+  margin-top: 6%;
+  margin-left: 10%;
+}
+#dadosUsuarioPerfil{
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+}
+.btnEditar{ /*Botão que aciona o modal editar*/
+  margin-left: -7%;
+  margin-top: 1%;
+}
+.rankingGeral{ /*Tabela de ranking geral*/
+  margin-left: 16%;
+  width: 75%;
+}
+.perforIndi{ /*Grafico de performance individual*/
+  width: 80%;
+}
+.labelEditar, .rankingGeral, .perforIndi{
+ margin-top: 2%;
+}
+.btnSinc{
+  margin-left: -15%;
+  margin-top: 1%;
+}
+.colunaModal, .perforIndi{
+  margin-left: 5%;
+}
+.titulosPerfil{ /*Título de ranking geral e performance individual*/
+  margin-left: 18%;
+  margin-top: 1%;
 }

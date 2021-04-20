@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang = "pt-BR">
-<head>
-	<title>Projeto - TCC</title>
-	<link rel="shortcut icon" href="../img/logo.jpg" >
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/w3.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css" />
-	<link rel="stylesheet" type="text/css" href="../css/login.css" />
-	<script src='../js/jquery-3.5.1.min.js'></script>
-	<script src="../js/bootstrap.min.js" ></script>
-	<script src = "../js/popper.min.js"></script>
-	<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<?php
+	include "funcoesEstruturais.php";
+	//Estrutura head
+	head();
+
+  //Se o usuário estiver logado
+  if(isset($_SESSION['login'])){
+  	//Cabeçalho da página
+  	//header('Location: home.php');
+  }
+?>
 
 	<script>
 		/*
@@ -30,7 +26,7 @@
 							+'<div class="form-group">'
 								+'<div class="input-group">'
 									+'<div class="input-group-prepend">'
-										+'<div class="input-group-text"><i class = "material-icons">email</i></div>'
+										+'<label for="email"><div class="input-group-text"><i class = "material-icons">email</i></div></label>'
 									+'</div>'
 									+'<input type="text" class="form-control" id="email" placeholder="E-mail" required>'
 								+'</div>'
@@ -42,7 +38,7 @@
 							+'<div class="form-group">'
 								+'<div class="input-group">'
 									+'<div class="input-group-prepend">'
-										+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
+										+'<label for="senha"><div class="input-group-text"><i class = "material-icons">lock</i></div></label>'
 									+'</div>'
 									+'<input type="password" class="form-control" id="senha" placeholder="Senha" required>'
 								+'</div>'
@@ -120,15 +116,13 @@
 			document.getElementById('form_index').innerHTML = HTML;
 		}
 	</script>
-</head>
 <body onload = "geraForm('login')">
-	<div class="fundo w3-display-container w3-animate-opacity w3-text-white">
-		<div class="w3-display-topleft w3-padding-large w3-xlarge">
-			TCC
-		</div>
+	<div class="fundo w3-display-container w3-animate-opacity">
 		<main>
 			<div class="w3-display-middle">
-				<h1 class="w3-jumbo w3-animate-top">CONECTAR</h1>
+				<div class = "w3-animate-opacity text-center"  style="margin-top:10px;">
+					<h1>Conectar</h1>
+				</div>
 
 				<div class="card text-center w3-animate-top">
 					<div class="card-body" id = "form_index">
@@ -141,21 +135,13 @@
 				</div>
 
 				<div class = "w3-animate-opacity text-center"  style="margin-top:10px;">
-					<hr class="w3-border-white" style="margin:auto;width:50%">
+					<hr class="w3-border-black" style="margin:auto;width:50%">
 					<p class="w3-large">Seja bem-vindo</p>
 				</div>
 			</div>
 		</main>
 	</div>
 
-	<!--Footer-->
-	<footer id = "sticky-footer" class = "py-4">
-		<hr/>
-		<p class = "text-center">Precisa de ajuda? leia nossa <a href = "sobre.php">documentação</a> ou entre em contato com os desenvolvedores através de um desses e-mails:</p>
-
-		<p class = "text-center">Amanda Ancelmo: amandabolattoancelmo@gmail.com</p>
-		<p class = "text-center">Renan Martins: renan2204@outlook.com</p>
-		<p class = "text-center">Yuri Kanegae: yurikanegae@gmail.com</p>
-	</footer>
-</body>
-</html>
+	<?php
+		rodape();
+	?>
