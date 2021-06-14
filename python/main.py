@@ -28,38 +28,48 @@ for rodada in range(1, 37):
     except:
         print("Arquivo inexistente")
         data = cursor.get_data(rodada).replace(np.nan, 0)
-        data.to_csv(nome_arquivo, encoding='utf-8')
+        data.to_csv(nome_arquivo, encoding='utf-8', sep =';')
 
 #Geração das fronteiras
 from Pareto_Front.Pareto import Pareto_front
+
+#Criação do dicionário de arquivos
+arquivos = {
+    "mei": [],
+    "tec": [],
+    "gol": [],
+    "ata": [],
+    "zag": [],
+    "lat": []
+}
 posicoes = ["mei", "tec", "gol", "ata", "zag","lat"]
 
-for pos in posicoes:
-    geral = []
-    for rodada in range(1, 37):
-        print("Rodada: " + str(rodada))
-        #Leitura do arquivo de rodadas
-        nome_arquivo = file_dir + '/Dados/Rodadas/rodada_' + str(rodada) + '.csv'
-        data = pd.read_csv(nome_arquivo)
-        data = data.to_numpy()
-        #Se deve maximizar ou minmizar
-        for i in range(17):
-            data[:, 16+i] *= config["scouts"][i]
+for rodada in range(1, 37):
+    print("Rodada: " + str(rodada))
 
-        #Criação do dicionário de jogadores
-        jogadores = {
-            "mei": [],
-            "tec": [],
-            "gol": [],
-            "ata": [],
-            "zag": [],
-            "lat": []
-        }#Categorizacao dos jogadores por posicao
-        for row in data:
-            jogadores[row[9]].append(row)
+    #Leitura do arquivo de rodadas
+    nome_arquivo = file_dir + '/Dados/Rodadas/rodada_' + str(rodada) + '.csv'
+    data = pd.read_csv(nome_arquivo, sep =';')
+    data = data.to_numpy()
 
+    #Se deve maximizar ou minmizar
+    for i in range(17):
+        data[:, 16+i] *= config["scouts"][i]
+
+    #Criação do dicionário de jogadores
+    jogadores = {
+        "mei": [],
+        "tec": [],
+        "gol": [],
+        "ata": [],
+        "zag": [],
+        "lat": []
+    }#Categorizacao dos jogadores por posicao
+    for row in data:
+        jogadores[row[9]].append(row)
+
+    for pos in posicoes:
         scores = np.array(jogadores[pos])
-        #jogadores_Nomes = np.array(jogadores[pos])[:, 1] #Definição dos nomes
 
         pontuacoes = []
         for i in range(17):
@@ -87,7 +97,9 @@ for pos in posicoes:
 
                     pontuacoes.append(round(soma, 2))
 
-        geral.append(pontuacoes)
+        arquivos[pos].append(pontuacoes)
 
-    geral = pd.DataFrame(geral)
-    geral.to_csv(file_dir + '/Dados/Resultados/' + str(pos) +'.csv')
+
+for pos in posicoes:
+    geral = pd.DataFrame(arquivos[pos])
+    geral.to_csv(file_dir + '/Dados/Resultados/' + str(pos) +'.csv', sep =';')
