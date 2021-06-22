@@ -1,0 +1,106 @@
+combinacao;soma
+[13 A] - Assistência x [2 G] - Gol;0.13876089323890153
+[13 A] - Assistência x [3 PI] - Passe Incompleto;0.1740320147294011
+[5 FC] - Falta Cometida x [0 FF] - Finalização para Fora;0.22365089394144289
+[12 SG] - Saldo de Gols (sem sofrer gol) x [3 PI] - Passe Incompleto;0.28011211557210136
+[13 A] - Assistência x [5 FC] - Falta Cometida;0.2818646500180135
+[4 CA] - Cartão Amarelo x [0 FF] - Finalização para Fora;0.29989225689014704
+[13 A] - Assistência x [1 FS] - Falta Sofrida;0.35642157206438096
+[7 FT] - Finalização na Trave x [1 FS] - Falta Sofrida;0.361221062296193
+[6 DS] - Desarme x [0 FF] - Finalização para Fora;0.3623282710729934
+[12 SG] - Saldo de Gols (sem sofrer gol) x [8 DD] - Defesa Difícil;0.3692591213858718
+[9 GS] - Gol Sofrido x [4 CA] - Cartão Amarelo;0.39355794167834474
+[13 A] - Assistência x [4 CA] - Cartão Amarelo;0.412763018777043
+[9 GS] - Gol Sofrido x [1 FS] - Falta Sofrida;0.41573191841434304
+[6 DS] - Desarme x [1 FS] - Falta Sofrida;0.42274725795277773
+[7 FT] - Finalização na Trave x [3 PI] - Passe Incompleto;0.43154927575065766
+[3 PI] - Passe Incompleto x [1 FS] - Falta Sofrida;0.43540774512268476
+[2 G] - Gol x [1 FS] - Falta Sofrida;0.48469963809175026
+[8 DD] - Defesa Difícil x [1 FS] - Falta Sofrida;0.5116004954944
+[10 FD] - Finalização Defendida x [2 G] - Gol;0.5402659489591941
+[6 DS] - Desarme x [3 PI] - Passe Incompleto;0.5598228323974954
+[9 GS] - Gol Sofrido x [5 FC] - Falta Cometida;0.6083694902678521
+[4 CA] - Cartão Amarelo x [1 FS] - Falta Sofrida;0.6108778693123412
+[5 FC] - Falta Cometida x [1 FS] - Falta Sofrida;0.618691683859791
+[10 FD] - Finalização Defendida x [3 PI] - Passe Incompleto;0.624312434546274
+[14 I] - Impedimento x [1 FS] - Falta Sofrida;0.6669873535396511
+[10 FD] - Finalização Defendida x [1 FS] - Falta Sofrida;0.7653658445768505
+[6 DS] - Desarme x [4 CA] - Cartão Amarelo;0.7804893376221858
+[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;0.7992784695335933
+[7 FT] - Finalização na Trave x [6 DS] - Desarme;0.8224735644928783
+[7 FT] - Finalização na Trave x [0 FF] - Finalização para Fora;0.823502370571269
+[8 DD] - Defesa Difícil x [3 PI] - Passe Incompleto;0.8459583743947594
+[10 FD] - Finalização Defendida x [5 FC] - Falta Cometida;0.8933469758148576
+[8 DD] - Defesa Difícil x [4 CA] - Cartão Amarelo;0.9655644535587379
+[7 FT] - Finalização na Trave x [4 CA] - Cartão Amarelo;1.048207468630592
+[13 A] - Assistência x [8 DD] - Defesa Difícil;1.1976072289514608
+[15 CV] - Cartão Vermelho x [1 FS] - Falta Sofrida;1.2167715173477143
+[1 FS] - Falta Sofrida x [0 FF] - Finalização para Fora;1.2262768493260898
+[12 SG] - Saldo de Gols (sem sofrer gol) x [5 FC] - Falta Cometida;1.2301629429034762
+[9 GS] - Gol Sofrido x [3 PI] - Passe Incompleto;1.2463969470645138
+[9 GS] - Gol Sofrido x [2 G] - Gol;1.2768439952408006
+[10 FD] - Finalização Defendida x [7 FT] - Finalização na Trave;1.2798196605745957
+[12 SG] - Saldo de Gols (sem sofrer gol) x [4 CA] - Cartão Amarelo;1.2850140198685431
+[10 FD] - Finalização Defendida x [8 DD] - Defesa Difícil;1.2977943096745521
+[13 A] - Assistência x [9 GS] - Gol Sofrido;1.3005724300631656
+[8 DD] - Defesa Difícil x [0 FF] - Finalização para Fora;1.3046326961632435
+[10 FD] - Finalização Defendida x [4 CA] - Cartão Amarelo;1.3099917050423078
+[8 DD] - Defesa Difícil x [5 FC] - Falta Cometida;1.3158239782535104
+[14 I] - Impedimento x [4 CA] - Cartão Amarelo;1.3278785658661705
+[15 CV] - Cartão Vermelho x [3 PI] - Passe Incompleto;1.3489289593390859
+[12 SG] - Saldo de Gols (sem sofrer gol) x [1 FS] - Falta Sofrida;1.3578785147991457
+[2 G] - Gol x [0 FF] - Finalização para Fora;1.3817245515726533
+[5 FC] - Falta Cometida x [4 CA] - Cartão Amarelo;1.397672407778293
+[14 I] - Impedimento x [3 PI] - Passe Incompleto;1.4125107097193879
+[13 A] - Assistência x [6 DS] - Desarme;1.5030393541671287
+[3 PI] - Passe Incompleto x [2 G] - Gol;1.5449960940014944
+[6 DS] - Desarme x [5 FC] - Falta Cometida;1.5495570054877483
+[7 FT] - Finalização na Trave x [2 G] - Gol;1.5559404660336427
+[10 FD] - Finalização Defendida x [6 DS] - Desarme;1.7404177355396138
+[14 I] - Impedimento x [5 FC] - Falta Cometida;1.7613037331378065
+[15 CV] - Cartão Vermelho x [8 DD] - Defesa Difícil;1.9019764379967268
+[15 CV] - Cartão Vermelho x [4 CA] - Cartão Amarelo;1.9126830757013291
+[4 CA] - Cartão Amarelo x [3 PI] - Passe Incompleto;2.014022448785107
+[10 FD] - Finalização Defendida x [9 GS] - Gol Sofrido;2.2178729195724745
+[12 SG] - Saldo de Gols (sem sofrer gol) x [7 FT] - Finalização na Trave;2.250747118763257
+[8 DD] - Defesa Difícil x [2 G] - Gol;2.270829948224294
+[15 CV] - Cartão Vermelho x [5 FC] - Falta Cometida;2.3078212418700965
+[12 SG] - Saldo de Gols (sem sofrer gol) x [9 GS] - Gol Sofrido;2.3226444096138636
+[5 FC] - Falta Cometida x [2 G] - Gol;2.378417062360062
+[9 GS] - Gol Sofrido x [6 DS] - Desarme;2.3794919690610783
+[3 PI] - Passe Incompleto x [0 FF] - Finalização para Fora;2.3933015674795524
+[12 SG] - Saldo de Gols (sem sofrer gol) x [2 G] - Gol;2.5367917344078075
+[12 SG] - Saldo de Gols (sem sofrer gol) x [6 DS] - Desarme;2.555531588788474
+[9 GS] - Gol Sofrido x [8 DD] - Defesa Difícil;2.7667582500925767
+[7 FT] - Finalização na Trave x [5 FC] - Falta Cometida;2.777701356283815
+[9 GS] - Gol Sofrido x [0 FF] - Finalização para Fora;2.828964499278891
+[4 CA] - Cartão Amarelo x [2 G] - Gol;2.9397606764226407
+[8 DD] - Defesa Difícil x [6 DS] - Desarme;3.0599259700965504
+[14 I] - Impedimento x [6 DS] - Desarme;3.090333079058606
+[6 DS] - Desarme x [2 G] - Gol;3.3621934150206405
+[9 GS] - Gol Sofrido x [7 FT] - Finalização na Trave;3.390838356767846
+[14 I] - Impedimento x [2 G] - Gol;3.7393259488126804
+[12 SG] - Saldo de Gols (sem sofrer gol) x [0 FF] - Finalização para Fora;3.7648346138931097
+[13 A] - Assistência x [7 FT] - Finalização na Trave;4.112898139312391
+[14 I] - Impedimento x [8 DD] - Defesa Difícil;4.1349493287671075
+[8 DD] - Defesa Difícil x [7 FT] - Finalização na Trave;4.234158145523623
+[12 SG] - Saldo de Gols (sem sofrer gol) x [10 FD] - Finalização Defendida;4.4271048665608435
+[15 CV] - Cartão Vermelho x [2 G] - Gol;5.004460549151684
+[15 CV] - Cartão Vermelho x [6 DS] - Desarme;5.205186046725039
+[14 I] - Impedimento x [7 FT] - Finalização na Trave;6.187049495970141
+[14 I] - Impedimento x [9 GS] - Gol Sofrido;6.487001485943609
+[10 FD] - Finalização Defendida x [0 FF] - Finalização para Fora;6.58939276693924
+[15 CV] - Cartão Vermelho x [7 FT] - Finalização na Trave;6.680277446711114
+[13 A] - Assistência x [12 SG] - Saldo de Gols (sem sofrer gol);7.2536741776557125
+[13 A] - Assistência x [10 FD] - Finalização Defendida;7.696044850095358
+[15 CV] - Cartão Vermelho x [12 SG] - Saldo de Gols (sem sofrer gol);7.70097966671867
+[15 CV] - Cartão Vermelho x [9 GS] - Gol Sofrido;7.945410971944263
+[13 A] - Assistência x [0 FF] - Finalização para Fora;8.53731208185138
+[14 I] - Impedimento x [12 SG] - Saldo de Gols (sem sofrer gol);9.225114231290778
+[14 I] - Impedimento x [10 FD] - Finalização Defendida;10.488439320327412
+[15 CV] - Cartão Vermelho x [10 FD] - Finalização Defendida;11.35238548420945
+[14 I] - Impedimento x [0 FF] - Finalização para Fora;12.183542379884145
+[14 I] - Impedimento x [13 A] - Assistência;12.224924171852086
+[15 CV] - Cartão Vermelho x [13 A] - Assistência;13.146330571362864
+[15 CV] - Cartão Vermelho x [14 I] - Impedimento;13.5886230740453
+[15 CV] - Cartão Vermelho x [0 FF] - Finalização para Fora;16.472927732460178

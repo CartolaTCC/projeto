@@ -1,0 +1,30 @@
+{
+    "posicoes": {
+        "ata": [0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0],
+        "gol": [0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0],
+        "lat": [0,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,0],
+        "mei": [0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0],
+        "tec": [0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0],
+        "zag": [0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0]
+    },
+    "scouts": {
+        "pesos": [1, 1, 1, -1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1],
+        "nomes": ["[0 FF] - Finalização para Fora",
+            "[1 FS] - Falta Sofrida",
+            "[2 G] - Gol",
+            "[3 PI] - Passe Incompleto",
+            "[4 CA] - Cartão Amarelo",
+            "[5 FC] - Falta Cometida",
+            "[6 DS] - Desarme",
+            "[7 FT] - Finalização na Trave",
+            "[8 DD] - Defesa Difícil",
+            "[9 GS] - Gol Sofrido",
+            "[10 FD] - Finalização Defendida",
+            "[11 GC] - Gol Contra",
+            "[12 SG] - Saldo de Gols (sem sofrer gol)",
+            "[13 A] - Assistência",
+            "[14 I] - Impedimento",
+            "[15 CV] - Cartão Vermelho",
+            "[16 PP] - Pênalti Perdido"]
+    }
+}

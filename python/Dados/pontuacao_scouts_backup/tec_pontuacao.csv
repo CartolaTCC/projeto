@@ -1,0 +1,106 @@
+combinacao;soma
+[1 FS] - Falta Sofrida x [0 FF] - Finalização para Fora;0.0
+[13 A] - Assistência x [9 GS] - Gol Sofrido;36.0
+[13 A] - Assistência x [8 DD] - Defesa Difícil;36.0
+[13 A] - Assistência x [7 FT] - Finalização na Trave;36.0
+[13 A] - Assistência x [6 DS] - Desarme;36.0
+[13 A] - Assistência x [5 FC] - Falta Cometida;36.0
+[13 A] - Assistência x [4 CA] - Cartão Amarelo;36.0
+[13 A] - Assistência x [3 PI] - Passe Incompleto;36.0
+[13 A] - Assistência x [2 G] - Gol;36.0
+[13 A] - Assistência x [1 FS] - Falta Sofrida;36.0
+[13 A] - Assistência x [0 FF] - Finalização para Fora;36.0
+[13 A] - Assistência x [10 FD] - Finalização Defendida;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [10 FD] - Finalização Defendida;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [8 DD] - Defesa Difícil;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [7 FT] - Finalização na Trave;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [6 DS] - Desarme;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [5 FC] - Falta Cometida;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [4 CA] - Cartão Amarelo;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [3 PI] - Passe Incompleto;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [2 G] - Gol;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [1 FS] - Falta Sofrida;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [0 FF] - Finalização para Fora;36.0
+[10 FD] - Finalização Defendida x [9 GS] - Gol Sofrido;36.0
+[12 SG] - Saldo de Gols (sem sofrer gol) x [9 GS] - Gol Sofrido;36.0
+[13 A] - Assistência x [12 SG] - Saldo de Gols (sem sofrer gol);36.0
+[14 I] - Impedimento x [0 FF] - Finalização para Fora;36.0
+[14 I] - Impedimento x [1 FS] - Falta Sofrida;36.0
+[15 CV] - Cartão Vermelho x [12 SG] - Saldo de Gols (sem sofrer gol);36.0
+[15 CV] - Cartão Vermelho x [10 FD] - Finalização Defendida;36.0
+[15 CV] - Cartão Vermelho x [9 GS] - Gol Sofrido;36.0
+[15 CV] - Cartão Vermelho x [8 DD] - Defesa Difícil;36.0
+[15 CV] - Cartão Vermelho x [7 FT] - Finalização na Trave;36.0
+[15 CV] - Cartão Vermelho x [6 DS] - Desarme;36.0
+[15 CV] - Cartão Vermelho x [5 FC] - Falta Cometida;36.0
+[15 CV] - Cartão Vermelho x [4 CA] - Cartão Amarelo;36.0
+[15 CV] - Cartão Vermelho x [3 PI] - Passe Incompleto;36.0
+[15 CV] - Cartão Vermelho x [2 G] - Gol;36.0
+[15 CV] - Cartão Vermelho x [1 FS] - Falta Sofrida;36.0
+[15 CV] - Cartão Vermelho x [0 FF] - Finalização para Fora;36.0
+[14 I] - Impedimento x [13 A] - Assistência;36.0
+[14 I] - Impedimento x [12 SG] - Saldo de Gols (sem sofrer gol);36.0
+[14 I] - Impedimento x [10 FD] - Finalização Defendida;36.0
+[14 I] - Impedimento x [9 GS] - Gol Sofrido;36.0
+[14 I] - Impedimento x [8 DD] - Defesa Difícil;36.0
+[14 I] - Impedimento x [7 FT] - Finalização na Trave;36.0
+[14 I] - Impedimento x [6 DS] - Desarme;36.0
+[14 I] - Impedimento x [5 FC] - Falta Cometida;36.0
+[14 I] - Impedimento x [4 CA] - Cartão Amarelo;36.0
+[14 I] - Impedimento x [3 PI] - Passe Incompleto;36.0
+[14 I] - Impedimento x [2 G] - Gol;36.0
+[10 FD] - Finalização Defendida x [8 DD] - Defesa Difícil;36.0
+[15 CV] - Cartão Vermelho x [13 A] - Assistência;36.0
+[10 FD] - Finalização Defendida x [7 FT] - Finalização na Trave;36.0
+[10 FD] - Finalização Defendida x [5 FC] - Falta Cometida;36.0
+[7 FT] - Finalização na Trave x [1 FS] - Falta Sofrida;36.0
+[7 FT] - Finalização na Trave x [0 FF] - Finalização para Fora;36.0
+[6 DS] - Desarme x [5 FC] - Falta Cometida;36.0
+[6 DS] - Desarme x [4 CA] - Cartão Amarelo;36.0
+[6 DS] - Desarme x [3 PI] - Passe Incompleto;36.0
+[6 DS] - Desarme x [2 G] - Gol;36.0
+[6 DS] - Desarme x [1 FS] - Falta Sofrida;36.0
+[6 DS] - Desarme x [0 FF] - Finalização para Fora;36.0
+[5 FC] - Falta Cometida x [4 CA] - Cartão Amarelo;36.0
+[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;36.0
+[7 FT] - Finalização na Trave x [2 G] - Gol;36.0
+[5 FC] - Falta Cometida x [2 G] - Gol;36.0
+[5 FC] - Falta Cometida x [0 FF] - Finalização para Fora;36.0
+[4 CA] - Cartão Amarelo x [3 PI] - Passe Incompleto;36.0
+[4 CA] - Cartão Amarelo x [2 G] - Gol;36.0
+[4 CA] - Cartão Amarelo x [1 FS] - Falta Sofrida;36.0
+[4 CA] - Cartão Amarelo x [0 FF] - Finalização para Fora;36.0
+[3 PI] - Passe Incompleto x [2 G] - Gol;36.0
+[3 PI] - Passe Incompleto x [1 FS] - Falta Sofrida;36.0
+[3 PI] - Passe Incompleto x [0 FF] - Finalização para Fora;36.0
+[2 G] - Gol x [1 FS] - Falta Sofrida;36.0
+[2 G] - Gol x [0 FF] - Finalização para Fora;36.0
+[5 FC] - Falta Cometida x [1 FS] - Falta Sofrida;36.0
+[7 FT] - Finalização na Trave x [3 PI] - Passe Incompleto;36.0
+[7 FT] - Finalização na Trave x [4 CA] - Cartão Amarelo;36.0
+[7 FT] - Finalização na Trave x [5 FC] - Falta Cometida;36.0
+[10 FD] - Finalização Defendida x [4 CA] - Cartão Amarelo;36.0
+[10 FD] - Finalização Defendida x [3 PI] - Passe Incompleto;36.0
+[10 FD] - Finalização Defendida x [2 G] - Gol;36.0
+[10 FD] - Finalização Defendida x [1 FS] - Falta Sofrida;36.0
+[10 FD] - Finalização Defendida x [0 FF] - Finalização para Fora;36.0
+[9 GS] - Gol Sofrido x [8 DD] - Defesa Difícil;36.0
+[9 GS] - Gol Sofrido x [7 FT] - Finalização na Trave;36.0
+[9 GS] - Gol Sofrido x [6 DS] - Desarme;36.0
+[9 GS] - Gol Sofrido x [5 FC] - Falta Cometida;36.0
+[9 GS] - Gol Sofrido x [4 CA] - Cartão Amarelo;36.0
+[9 GS] - Gol Sofrido x [3 PI] - Passe Incompleto;36.0
+[9 GS] - Gol Sofrido x [2 G] - Gol;36.0
+[9 GS] - Gol Sofrido x [1 FS] - Falta Sofrida;36.0
+[9 GS] - Gol Sofrido x [0 FF] - Finalização para Fora;36.0
+[8 DD] - Defesa Difícil x [7 FT] - Finalização na Trave;36.0
+[8 DD] - Defesa Difícil x [6 DS] - Desarme;36.0
+[8 DD] - Defesa Difícil x [5 FC] - Falta Cometida;36.0
+[8 DD] - Defesa Difícil x [4 CA] - Cartão Amarelo;36.0
+[8 DD] - Defesa Difícil x [3 PI] - Passe Incompleto;36.0
+[8 DD] - Defesa Difícil x [2 G] - Gol;36.0
+[8 DD] - Defesa Difícil x [1 FS] - Falta Sofrida;36.0
+[8 DD] - Defesa Difícil x [0 FF] - Finalização para Fora;36.0
+[7 FT] - Finalização na Trave x [6 DS] - Desarme;36.0
+[10 FD] - Finalização Defendida x [6 DS] - Desarme;36.0
+[15 CV] - Cartão Vermelho x [14 I] - Impedimento;36.0
