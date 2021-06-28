@@ -1,16 +1,16 @@
 combinacao;soma
-[3 PI] - Passe Incompleto x [1 FS] - Falta Sofrida;0.7390925828036086
-[13 A] - Assistência x [2 G] - Gol;0.8886958128862318
-[2 G] - Gol x [1 FS] - Falta Sofrida;1.0467591927842979
-[13 A] - Assistência x [3 PI] - Passe Incompleto;1.3326761169026
-[13 A] - Assistência x [1 FS] - Falta Sofrida;1.3699714109161902
-[5 FC] - Falta Cometida x [1 FS] - Falta Sofrida;1.3747123473419143
-[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;1.4269284936034607
-[12 SG] - Saldo de Gols (sem sofrer gol) x [2 G] - Gol;1.529943389547925
-[12 SG] - Saldo de Gols (sem sofrer gol) x [3 PI] - Passe Incompleto;1.5364510973450327
-[3 PI] - Passe Incompleto x [2 G] - Gol;1.7883610090439157
-[5 FC] - Falta Cometida x [2 G] - Gol;2.2542396482013407
-[13 A] - Assistência x [12 SG] - Saldo de Gols (sem sofrer gol);2.616363155500102
-[12 SG] - Saldo de Gols (sem sofrer gol) x [1 FS] - Falta Sofrida;3.462010388365042
-[12 SG] - Saldo de Gols (sem sofrer gol) x [5 FC] - Falta Cometida;3.699886227584231
-[13 A] - Assistência x [5 FC] - Falta Cometida;4.337332001756413
+[2 G] - Gol x [1 FS] - Falta Sofrida;0.0178934961962926
+[5 FC] - Falta Cometida x [1 FS] - Falta Sofrida;0.039639913936589
+[3 PI] - Passe Incompleto x [1 FS] - Falta Sofrida;0.08473128943746899
+[13 A] - Assistência x [3 PI] - Passe Incompleto;0.0910475312470791
+[13 A] - Assistência x [2 G] - Gol;0.09924755208640142
+[12 SG] - Saldo de Gols (sem sofrer gol) x [2 G] - Gol;0.1259640620767303
+[5 FC] - Falta Cometida x [2 G] - Gol;0.225429942384036
+[13 A] - Assistência x [1 FS] - Falta Sofrida;0.3300322333069434
+[12 SG] - Saldo de Gols (sem sofrer gol) x [1 FS] - Falta Sofrida;0.5260926133342383
+[13 A] - Assistência x [12 SG] - Saldo de Gols (sem sofrer gol);0.6804877097893918
+[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;0.770066377316451
+[3 PI] - Passe Incompleto x [2 G] - Gol;1.0147136711105067
+[13 A] - Assistência x [5 FC] - Falta Cometida;1.0484048944975823
+[12 SG] - Saldo de Gols (sem sofrer gol) x [5 FC] - Falta Cometida;1.082902749921265
+[12 SG] - Saldo de Gols (sem sofrer gol) x [3 PI] - Passe Incompleto;1.2370348630463508
