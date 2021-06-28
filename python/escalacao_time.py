@@ -8,18 +8,9 @@ import json
 file_dir = os.path.dirname(os.path.abspath(__file__))
 with open("config/config.json") as json_data_file:
     config = json.load(json_data_file)
-'''
-dict = {}
-for rodada in range(1, 37):
-    #Leitura do arquivo da rodada
-    nome_arquivo = file_dir + '/dados/rodadas/rodada_' + str(rodada) + '.csv'
-    data = pd.read_csv(nome_arquivo, sep =';')
 
-    dict.update(data.set_index('atletas.atleta_id').T.to_dict('list'))
-'''
 rodada_atual = int(input('Rodada atual: '))
 janela_analise = int(input('Janela de analise: '))
-
 
 jogadores = {
     "mei": [],
@@ -51,6 +42,32 @@ for pos in posicoes:
     data = data.groupby(by = [0]).sum()
     jogadores[pos] = data
 
+escalacao = {
+    "mei": {
+        "tamanho": 0,
+        "indices": []
+    },
+    "tec": {
+        "tamanho": 0,
+        "indices": []
+    },
+    "gol": {
+        "tamanho": 0,
+        "indices": []
+    },
+    "ata": {
+        "tamanho": 0,
+        "indices": []
+    },
+    "zag": {
+        "tamanho": 0,
+        "indices": []
+    },
+    "lat": {
+        "tamanho": 0,
+        "indices": []
+    }
+}
 for pos in posicoes:
     scores = jogadores[pos].to_numpy()
     indices = jogadores[pos].index
@@ -60,6 +77,14 @@ for pos in posicoes:
     j = int(input())
 
     Set = Pareto_front(scores[:, [i, j]])
-    fronts = Set.Calc_Pareto(2)
+    fronts = Set.Calc_Pareto(3)
+
+    jogadores_ids = []
     for k in fronts:
-        print(indices[k])
+        for indice in indices[k]:
+            jogadores_ids.append(indice)
+
+    escalacao[pos]["indices"].append(jogadores_ids)
+    escalacao[pos]["tamanho"] += len(jogadores_ids)
+
+print(escalacao)

@@ -1,11 +1,11 @@
 combinacao;soma
-[4 CA] - Cartão Amarelo x [3 PI] - Passe Incompleto;0.0476439925556829
-[15 CV] - Cartão Vermelho x [3 PI] - Passe Incompleto;0.1561230331205099
-[6 DS] - Desarme x [4 CA] - Cartão Amarelo;0.1920059592473385
-[6 DS] - Desarme x [5 FC] - Falta Cometida;0.22475620320447878
-[5 FC] - Falta Cometida x [4 CA] - Cartão Amarelo;0.48069195974999157
-[6 DS] - Desarme x [3 PI] - Passe Incompleto;0.4807608563706124
-[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;0.5592377299694371
-[15 CV] - Cartão Vermelho x [6 DS] - Desarme;0.9142583933164252
-[15 CV] - Cartão Vermelho x [5 FC] - Falta Cometida;1.9563132977767124
-[15 CV] - Cartão Vermelho x [4 CA] - Cartão Amarelo;3.0
+[6 DS] - Desarme x [3 PI] - Passe Incompleto;0.7780993273075584
+[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;1.361428234046991
+[5 FC] - Falta Cometida x [4 CA] - Cartão Amarelo;1.6230943908309428
+[15 CV] - Cartão Vermelho x [3 PI] - Passe Incompleto;2.200348515351581
+[6 DS] - Desarme x [5 FC] - Falta Cometida;2.2173637344336283
+[6 DS] - Desarme x [4 CA] - Cartão Amarelo;2.452728382636085
+[4 CA] - Cartão Amarelo x [3 PI] - Passe Incompleto;3.2446330396675176
+[15 CV] - Cartão Vermelho x [5 FC] - Falta Cometida;4.227760984644355
+[15 CV] - Cartão Vermelho x [6 DS] - Desarme;5.40431136427016
+[15 CV] - Cartão Vermelho x [4 CA] - Cartão Amarelo;9.965844724627404
