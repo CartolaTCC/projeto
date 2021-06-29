@@ -2,14 +2,6 @@
 	include "funcoesEstruturais.php";
 	//Estrutura head
 	head();
-
-  //Se o usuário estiver logado
-  if(isset($_SESSION['login'])){
-  	//Cabeçalho da página
-  	cabecalhoUsuarioLogado();
-  }else{
-    header('Location: index.php');
-  }
 ?>
   <body>
       <main>

@@ -104,14 +104,14 @@
             $("#tbody").html(HTML);
         }else if(attack_scouts){
             var HTML = '<tr>'
-                    +'<th scope = "col">#</th>'
-                    +'<th scope = "col">Jogador</th>'
-                    +'<th scope = "col">Posição</th>'
-                    +'<th scope = "col">Preço</th>'
-                    +'<th scope = "col">Gol</th>'
-                    +'<th scope = "col">Assistência</th>'
-                    +'<th scope = "col">Finalização para Fora</th>'
-                    +'<th scope = "col">Finalização na Trave</th>'
+                    +'<th scope = "col" class="thRanking">#</th>'
+                    +'<th scope = "col" class="thRanking">Jogador</th>'
+                    +'<th scope = "col" class="thRanking">Posição</th>'
+                    +'<th scope = "col" class="thRanking">Preço</th>'
+                    +'<th scope = "col" class="thRanking">Gol</th>'
+                    +'<th scope = "col" class="thRanking">Assistência</th>'
+                    +'<th scope = "col" class="thRanking">Finalização para Fora</th>'
+                    +'<th scope = "col" class="thRanking">Finalização na Trave</th>'
                 +'</tr>';
 
             $("#thead").html(HTML);
@@ -139,15 +139,15 @@
             $("#tbody").html(HTML);
         }else if(defense_scouts){
             var HTML = '<tr>'
-                    +'<th scope = "col">#</th>'
-                    +'<th scope = "col">Jogador</th>'
-                    +'<th scope = "col">Posição</th>'
-                    +'<th scope = "col">Preço</th>'
-                    +'<th scope = "col">Falta sofrida</th>'
-                    +'<th scope = "col">Defesa Difícil</th>'
-                    +'<th scope = "col">Defesa de Pênalti</th>'
-                    +'<th scope = "col">Desarme</th>'
-                    +'<th scope = "col">Finalização Defendida</th>'
+                    +'<th scope = "col" class="thRanking">#</th>'
+                    +'<th scope = "col" class="thRanking">Jogador</th>'
+                    +'<th scope = "col" class="thRanking">Posição</th>'
+                    +'<th scope = "col" class="thRanking">Preço</th>'
+                    +'<th scope = "col" class="thRanking">Falta sofrida</th>'
+                    +'<th scope = "col" class="thRanking">Defesa Difícil</th>'
+                    +'<th scope = "col" class="thRanking">Defesa de Pênalti</th>'
+                    +'<th scope = "col" class="thRanking">Desarme</th>'
+                    +'<th scope = "col" class="thRanking">Finalização Defendida</th>'
                 +'</tr>';
 
             $("#thead").html(HTML);
