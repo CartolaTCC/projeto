@@ -212,15 +212,16 @@ $(".select").html(HTML);
 				success: function(data){
           var HTML = '<tr>'
                   +'<th scope = "col" class="thRanking">Posição</th>'
-                  +'<th scope = "col" class="thRanking">ID</th>'
+                  +'<th scope = "col" class="thRanking">Jogador</th>'
               +'</tr>';
           $("#thead").html(HTML);
 
           var HTML = '';
-          var ata = data.ata.indices;
-          for(let i=0; i<ata.length;i++){
+
+          var tec = data.tec.indices;
+          for(let i=0; i<tec.length;i++){
             for(let j=0; j<1;j++){
-							var idJogador = ata[i][j];
+							var idJogador = tec[i][j];
 							$.ajax({
       				      url: 'https://cartolatccapi.herokuapp.com/jogador',
       				      timeout: 3000,
@@ -228,10 +229,10 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  console.log(dadosJogador);
+                  HTML += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
                 }
               });
-              HTML += '<tr><td>Atacante</td><td>'+ata[i][j]+'</td></tr>';
             }
           }
 
@@ -246,10 +247,28 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  console.log(dadosJogador);
+                  HTML += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
                 }
               });
-              HTML += '<tr><td>Goleiro</td><td>'+gol[i][j]+'</td></tr>';
+            }
+          }
+
+          var ata = data.ata.indices;
+          for(let i=0; i<ata.length;i++){
+            for(let j=0; j<3;j++){
+							var idJogador = ata[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  HTML += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
+                }
+              });
             }
           }
 
@@ -264,10 +283,10 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  console.log(dadosJogador);
+                  HTML += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
                 }
               });
-              HTML += '<tr><td>Lateral</td><td>'+lat[i][j]+'</td></tr>';
             }
           }
 
@@ -282,28 +301,10 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  console.log(dadosJogador);
+                  HTML += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
                 }
               });
-              HTML += '<tr><td>Meia</td><td>'+mei[i][j]+'</td></tr>';
-            }
-          }
-
-          var tec = data.tec.indices;
-          for(let i=0; i<tec.length;i++){
-            for(let j=0; j<1;j++){
-							var idJogador = tec[i][j];
-							$.ajax({
-      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
-      				      timeout: 3000,
-      				      method: 'GET',
-      				      dataType: 'json',
-      				      data: {"id":idJogador},
-        				success: function(dadosJogador){
-                  console.log(dadosJogador);
-                }
-              });
-              HTML += '<tr><td>Técnico</td><td>'+tec[i][j]+'</td></tr>';
             }
           }
 
@@ -318,14 +319,12 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  console.log(dadosJogador);
+                  HTML += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td></tr>';
+									$("#tbody").html(HTML);
                 }
               });
-              HTML += '<tr><td>Zagueiro</td><td>'+zag[i][j]+'</td></tr>';
             }
           }
-
-          $("#tbody").html(HTML);
 				}
 			});
     }
