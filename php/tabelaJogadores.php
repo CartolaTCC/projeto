@@ -219,7 +219,7 @@ $(".select").html(HTML);
           var HTML = '';
           var ata = data.ata.indices;
           for(let i=0; i<ata.length;i++){
-            for(let j=0; j<ata[i].length;j++){
+            for(let j=0; j<1;j++){
 							var idJogador = ata[i][j];
 							$.ajax({
       				      url: 'https://cartolatccapi.herokuapp.com/jogador',
@@ -237,35 +237,90 @@ $(".select").html(HTML);
 
           var gol = data.gol.indices;
           for(let i=0; i<gol.length;i++){
-            for(let j=0; j<gol[i].length;j++){
+            for(let j=0; j<1;j++){
+							var idJogador = gol[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  console.log(dadosJogador);
+                }
+              });
               HTML += '<tr><td>Goleiro</td><td>'+gol[i][j]+'</td></tr>';
             }
           }
 
           var lat = data.lat.indices;
           for(let i=0; i<lat.length;i++){
-            for(let j=0; j<lat[i].length;j++){
+            for(let j=0; j<2;j++){
+							var idJogador = lat[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  console.log(dadosJogador);
+                }
+              });
               HTML += '<tr><td>Lateral</td><td>'+lat[i][j]+'</td></tr>';
             }
           }
 
           var mei = data.mei.indices;
           for(let i=0; i<mei.length;i++){
-            for(let j=0; j<mei[i].length;j++){
+            for(let j=0; j<3;j++){
+							var idJogador = mei[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  console.log(dadosJogador);
+                }
+              });
               HTML += '<tr><td>Meia</td><td>'+mei[i][j]+'</td></tr>';
             }
           }
 
           var tec = data.tec.indices;
           for(let i=0; i<tec.length;i++){
-            for(let j=0; j<tec[i].length;j++){
+            for(let j=0; j<1;j++){
+							var idJogador = tec[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  console.log(dadosJogador);
+                }
+              });
               HTML += '<tr><td>Técnico</td><td>'+tec[i][j]+'</td></tr>';
             }
           }
 
           var zag = data.zag.indices;
           for(let i=0; i<zag.length;i++){
-            for(let j=0; j<zag[i].length;j++){
+            for(let j=0; j<2;j++){
+							var idJogador = zag[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  console.log(dadosJogador);
+                }
+              });
               HTML += '<tr><td>Zagueiro</td><td>'+zag[i][j]+'</td></tr>';
             }
           }
