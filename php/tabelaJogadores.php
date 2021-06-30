@@ -213,6 +213,8 @@ $(".select").html(HTML);
           var HTML = '<tr>'
                   +'<th scope = "col" class="thRanking">Posição</th>'
                   +'<th scope = "col" class="thRanking">Jogador</th>'
+                  +'<th scope = "col" class="thRanking">Preço</th>'
+                  +'<th scope = "col" class="thRanking">Pontuação</th>'
               +'</tr>';
           $("#thead").html(HTML);
 
@@ -229,7 +231,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
@@ -247,7 +249,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
@@ -265,7 +267,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
@@ -283,7 +285,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
@@ -301,7 +303,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
@@ -319,7 +321,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td></tr>';
+                  HTML += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
 									$("#tbody").html(HTML);
                 }
               });
