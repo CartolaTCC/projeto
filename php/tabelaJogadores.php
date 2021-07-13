@@ -156,6 +156,11 @@
 
 <script>
 
+
+ESCALACAO = '';
+SOMAPONTUACAO = 0;
+SOMAPRECO = 0;
+
     function selectScouts(){
       var HTML='<option value="10">Finalização Defendida</option>'
 +'<option value="2">Gol</option>'
@@ -203,6 +208,7 @@ $(".select").html(HTML);
 				"zag_scout1": zag_scout1, "zag_scout2": zag_scout2
 			};
 
+
 			$.ajax({
 				url: 'https://cartolatccapi.herokuapp.com/time',
 				timeout: 3000,
@@ -213,30 +219,12 @@ $(".select").html(HTML);
           var HTML = '<tr>'
                   +'<th scope = "col" class="thRanking">Posição</th>'
                   +'<th scope = "col" class="thRanking">Jogador</th>'
+                  +'<th scope = "col" class="thRanking">Apelido</th>'
+                  +'<th scope = "col" class="thRanking">Clube</th>'
                   +'<th scope = "col" class="thRanking">Preço</th>'
                   +'<th scope = "col" class="thRanking">Pontuação</th>'
               +'</tr>';
           $("#thead").html(HTML);
-
-          var HTML = '';
-
-          var tec = data.tec.indices;
-          for(let i=0; i<tec.length;i++){
-            for(let j=0; j<1;j++){
-							var idJogador = tec[i][j];
-							$.ajax({
-      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
-      				      timeout: 3000,
-      				      method: 'GET',
-      				      dataType: 'json',
-      				      data: {"id":idJogador},
-        				success: function(dadosJogador){
-                  HTML += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
-                }
-              });
-            }
-          }
 
           var gol = data.gol.indices;
           for(let i=0; i<gol.length;i++){
@@ -249,8 +237,9 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
+                  ESCALACAO += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
               });
             }
@@ -267,8 +256,9 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
+                  ESCALACAO += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
               });
             }
@@ -285,8 +275,9 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
+                  ESCALACAO += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
               });
             }
@@ -303,8 +294,9 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
+                  ESCALACAO += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
               });
             }
@@ -321,13 +313,38 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador},
         				success: function(dadosJogador){
-                  HTML += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[11]+'</td><td>'+dadosJogador[10]+'</td></tr>';
-									$("#tbody").html(HTML);
+                  ESCALACAO += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
+                }
+              });
+            }
+          }
+
+          var tec = data.tec.indices;
+          for(let i=0; i<tec.length;i++){
+            for(let j=0; j<1;j++){
+							var idJogador = tec[i][j];
+							$.ajax({
+      				      url: 'https://cartolatccapi.herokuapp.com/jogador',
+      				      timeout: 3000,
+      				      method: 'GET',
+      				      dataType: 'json',
+      				      data: {"id":idJogador},
+        				success: function(dadosJogador){
+                  ESCALACAO += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>'+dadosJogador[16]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+									console.log(dadosJogador);
+
+									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
+									SOMAPRECO += parseFloat(dadosJogador[11]);
+									ESCALACAO += '<tr><td colspan="4"><b>Total</b></td><td>C$'+SOMAPRECO.toFixed(2)+'</td><td>'+SOMAPONTUACAO.toFixed(2)+'</td></tr>';
+									$("#tbody").html(ESCALACAO);
                 }
               });
             }
           }
 				}
 			});
+
     }
 </script>
