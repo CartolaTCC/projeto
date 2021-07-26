@@ -1,0 +1,11 @@
+combinacao;soma
+[5 FC] - Falta Cometida x [4 CA] - Cartão Amarelo;0.9295250896057344
+[5 FC] - Falta Cometida x [3 PI] - Passe Incompleto;1.492229254571026
+[4 CA] - Cartão Amarelo x [3 PI] - Passe Incompleto;1.5396888888888884
+[6 DS] - Desarme x [4 CA] - Cartão Amarelo;1.8976561052436534
+[6 DS] - Desarme x [3 PI] - Passe Incompleto;2.061624338624338
+[6 DS] - Desarme x [5 FC] - Falta Cometida;2.153469915097822
+[15 CV] - Cartão Vermelho x [6 DS] - Desarme;2.262941486557722
+[15 CV] - Cartão Vermelho x [4 CA] - Cartão Amarelo;3.3401709401709394
+[15 CV] - Cartão Vermelho x [5 FC] - Falta Cometida;4.12016806722689
+[15 CV] - Cartão Vermelho x [3 PI] - Passe Incompleto;7.116751269035534

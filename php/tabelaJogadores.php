@@ -235,7 +235,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
@@ -254,7 +254,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
@@ -273,7 +273,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
@@ -292,7 +292,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
@@ -311,7 +311,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
@@ -330,7 +330,7 @@ $(".select").html(HTML);
       				      timeout: 3000,
       				      method: 'GET',
       				      dataType: 'json',
-      				      data: {"id":idJogador},
+      				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>'+dadosJogador[16]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									console.log(dadosJogador);

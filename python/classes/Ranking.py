@@ -9,9 +9,9 @@ class Ranking:
         dados = numpy.transpose(dados)
 
         for i in dados:
-            dados_p = dados.sort_values(by=[i], ascending=False)
-            valores_substituir = sorted(set(dados_p[i]), reverse=True)
+            dados_p = dados.sort_values(by = [i], ascending = False)
+            valores_substituir = sorted(set(dados_p[i]), reverse = True)
             valores_unicos = range(1, len(valores_substituir) + 1)
-            dados[i].replace(valores_substituir, valores_unicos, inplace=True)
+            dados[i].replace(valores_substituir, valores_unicos, inplace = True)
 
         dados.to_csv(file_dir + '/../dados/pontuacao_scouts/' + nome + '_ranking.csv', sep =';', index = False)

@@ -8,5 +8,7 @@ class Ponderacao:
         rank = pd.read_csv(file_dir + '/../dados/pontuacao_scouts/' + nome + '_ranking.csv', dtype = numpy.float64, sep =';')
         normalizado = pd.read_csv(file_dir + '/../dados/pontuacao_scouts/' + nome + '_normalizado.csv', dtype = numpy.float64, sep =';')
 
-        dados = normalizado.div(rank, level = 1, fill_value = 1)
+        normalizado = normalizado.T
+
+        dados = pd.DataFrame(numpy.divide(normalizado.to_numpy(), rank.to_numpy()))
         dados.to_csv(file_dir + '/../dados/pontuacao_scouts/' + nome + '_ponderado.csv', sep =';', index = False)

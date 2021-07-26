@@ -12,7 +12,6 @@ file_dir = os.path.dirname(os.path.abspath(__file__))
 with open("config/config.json") as json_data_file:
     config = json.load(json_data_file)
 
-
 #Geração das fronteiras
 from classes.Pareto import Pareto_front
 
@@ -85,4 +84,4 @@ for rodada in range(inicio, fim):
 
 for pos in posicoes:
     geral = pd.DataFrame(arquivos[pos])
-    geral.to_csv(file_dir + '/dados/pontuacao_scouts/' + str(pos) +'_original.csv', sep =';')
+    geral.to_csv(file_dir + '/dados/pontuacao_scouts/' + str(pos) +'_original.csv', sep =';', index = False)
