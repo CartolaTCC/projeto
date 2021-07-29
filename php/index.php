@@ -6,7 +6,7 @@
   //Se o usuário estiver logado
   if(isset($_SESSION['login'])){
   	//Cabeçalho da página
-  	//header('Location: home.php');
+  	header('Location: home.php');
   }
 ?>
 
@@ -18,6 +18,13 @@
 					'login' - formulário de login
 					'cadastro' - formulário de cadastro
 		*/
+		$("input[name='nomeUsuario']").on('blur', function(){
+			var nomeUsuario = $(this).val();
+			$.get('usuario.php?nomeUsuario=' + nomeUsuario, function(data){
+				$('#resultado').html(data);
+			});
+		});
+
 		function geraForm(tipo){
 			if(tipo == 'login'){
 				var HTML = '<form action="home.php" method="POST" name="form_index">'
@@ -54,6 +61,7 @@
 						+'</div>'
 					+'</div>'
 					+'<br/>'
+					+'<input type="hidden" id="tipoForm" name="tipoForm" value="0">'
 					+'<button type="submit" class="btn-block btn-dark">Entrar</button>'
 				+'</form>';
 
@@ -66,7 +74,7 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">email</i></div>'
 								+'</div>'
-								+'<input type="text" class="form-control" id="email" placeholder="E-mail">'
+								+'<input type="text" class="form-control" id="email" name="email" placeholder="E-mail">'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -78,7 +86,8 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">account_circle</i></div>'
 								+'</div>'
-								+'<input type="text" class="form-control" id="nomeUsuario" placeholder="Nome de usuário">'
+								+'<input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" placeholder="Nome de usuário">'
+								+'<div id="resultado"></div>'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -90,7 +99,7 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
 								+'</div>'
-								+'<input type="password" class="form-control" id="senha" placeholder="Senha">'
+								+'<input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -108,6 +117,7 @@
 					+'</div>'
 				+'</div>'
 				+'<br/>'
+				+'<input type="hidden" id="tipoForm" name="tipoForm" value="1">'
 				+'<a href="index.php"> <button type="submit" class="btn-block btn-dark">Cadastrar</button> </a>';
 
 				document.getElementById('avisoFooter').innerHTML = 'Já se cadastrou? <a href="#" onclick = "geraForm(\'login\')">Faça Login</a>';
@@ -145,3 +155,5 @@
 	<?php
 		rodape();
 	?>
+
+
