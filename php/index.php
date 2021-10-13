@@ -34,7 +34,8 @@
 									+'<div class="input-group-prepend">'
 										+'<label for="email"><div class="input-group-text"><i class = "material-icons">email</i></div></label>'
 									+'</div>'
-									+'<input type="text" class="form-control" id="email" name="emailLogin" placeholder="E-mail" required>'
+									<?php $lembranca = (isset($_COOKIE["cookieUser"])) ? $_COOKIE['cookieUser'] : "";?>
+									+'<input type="text" class="form-control" id="email" name="emailLogin" placeholder="E-mail" value=".<?php echo $lembranca ?>." required>'
 								+'</div>'
 							+'</div>'
 						+'</div>'
@@ -54,8 +55,8 @@
 					+'<div class="row">'
 						+'<div class="col-sm-12">'
 							+'<div class="form-check">'
-								+'<input class="form-check-input" type="checkbox" id="lembrar_senha">'
-								+'<label class="form-check-label" for="lembrar_senha">Lembrar-se</label>'
+								+'<input class="form-check-input" type="checkbox" name="lembrar_usuario" id="lembrar_usuario">'
+								+'<label class="form-check-label" for="lembrar_usuario">Lembrar usuário</label>'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -176,4 +177,5 @@
 	</div>
 	<?php
 		rodape();
+
 	?>

@@ -24,6 +24,10 @@
         if(mysqli_num_rows($resultado) == 1) {
           $_SESSION["usuario"] = "1";
 
+          if(isset($_POST['lembrar_usuario'])){
+            lembrar_usuario($email);
+          }
+
           header('Location: home.php');
         }else{
           header("location:index.php?erro=0");
@@ -61,4 +65,9 @@
 
 	//Rodapé da página
   rodape();
+
+	function lembrar_usuario($user){
+		$validade= strtotime("+1 month");
+		setcookie("cookieUser", $user, $validade, "/", "", false, true);
+	}
 ?>
