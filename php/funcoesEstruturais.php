@@ -28,7 +28,7 @@
 		$head .= "\t\t<script src='../js/jquery-3.5.1.min.js'></script>\n\n";
 		$head .= "\t\t<script src='../js/bootstrap.min.js' ></script>\n\n";
 		$head .= "\t\t<script src='../js/popper.min.js'></script>\n\n";
-		$head .= "\t\t<script src='../js/MD5.js'></script>\n\n";	
+		$head .= "\t\t<script src='../js/MD5.js'></script>\n\n";
 
 		$head .= "\t</head>\n";
 
@@ -50,7 +50,7 @@
 		$cabecalho .= "\t\t\t<!--Elementos centrais-->";
 		$cabecalho .= "\t\t\t<ul class='navbar-nav ml-auto'>";
 		$cabecalho .= "\t\t\t\t<li class='nav-item'>";
-		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='ranking.php'>Ranking</a>";
+		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='tabelaJogadores.php'>Ranking</a>";
 		$cabecalho .= "\t\t\t\t</li>";
 
 		$cabecalho .= "\t\t\t\t<li class='nav-item'>";
@@ -94,7 +94,7 @@
 		$cabecalho .= "\t\t\t\t<a class='mx-auto' href='#'><img src='../img/engrenagem.png' class='cartola' alt='home' style='width: 40%;'/></a>";
 		$cabecalho .= "\t\t\t</button>";
 		$cabecalho .= "\t\t\t<div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>";
-		$cabecalho .= "\t\t\t\t<a class='dropdown-item' href='sair.php'><img src='../img/foto.png' alt='meu perfil' style='width: 30%;'/>Meu perfil</a>";
+		$cabecalho .= "\t\t\t\t<a class='dropdown-item' href='perfil.php'><img src='../img/foto.png' alt='meu perfil' style='width: 30%;'/>Meu perfil</a>";
 		$cabecalho .= "\t\t\t\t<a class='dropdown-item' href='sair.php'><img src='../img/exit.png' alt='sair' style='width: 30%;'/>Sair</a>";
 		$cabecalho .= "\t\t\t</div>";
 		$cabecalho .= "\t\t</div>";

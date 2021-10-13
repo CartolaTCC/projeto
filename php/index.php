@@ -1,13 +1,13 @@
 <?php
 	include "funcoesEstruturais.php";
+	include "constSession.php";
 	//Estrutura head
 	head();
 
   //Se o usuário estiver logado
-  if(isset($_SESSION['login'])){
-  	//Cabeçalho da página
-  	header('Location: home.php');
-  }
+	if($_SESSION[SESSAO]==1){
+		header('Location: home.php');
+	}
 ?>
 
 	<script>
@@ -27,7 +27,7 @@
 
 		function geraForm(tipo){
 			if(tipo == 'login'){
-				var HTML = '<form action="home.php" method="POST" name="form_index">'
+				var HTML = '<form action="autenticacao.php" method="POST" name="form_index">'
 						+'<div class="row">'
 						+'<div class="col-sm-12">'
 							+'<div class="form-group">'
@@ -35,7 +35,7 @@
 									+'<div class="input-group-prepend">'
 										+'<label for="email"><div class="input-group-text"><i class = "material-icons">email</i></div></label>'
 									+'</div>'
-									+'<input type="text" class="form-control" id="email" placeholder="E-mail" required>'
+									+'<input type="text" class="form-control" id="email" name="emailLogin" placeholder="E-mail" required>'
 								+'</div>'
 							+'</div>'
 						+'</div>'
@@ -47,7 +47,7 @@
 									+'<div class="input-group-prepend">'
 										+'<label for="senha"><div class="input-group-text"><i class = "material-icons">lock</i></div></label>'
 									+'</div>'
-									+'<input type="password" class="form-control" id="senha" placeholder="Senha" required>'
+									+'<input type="password" class="form-control" id="senha" name="senhaLogin" placeholder="Senha" required>'
 								+'</div>'
 							+'</div>'
 						+'</div>'
@@ -67,7 +67,8 @@
 
 				document.getElementById('avisoFooter').innerHTML = 'Novo na plataforma? <a href="#" onclick = "geraForm(\'cadastro\')"> Registrar-se </a>';
 			}else if(tipo == 'cadastro'){
-				var HTML = '<div class="row">'
+				var HTML = '<form action="autenticacao.php" method="POST" name="form_index">'
+				+'<div class="row">'
 					+'<div class="col-sm-12">'
 						+'<div class="form-group">'
 							+'<div class="input-group">'
@@ -127,7 +128,30 @@
 		}
 	</script>
 <body onload = "geraForm('login')">
+
 	<div class="fundo w3-display-container w3-animate-opacity">
+
+		<?php
+			if(!empty($_GET) && $_GET['erro']==1){
+				echo "
+					<div class = 'container' style='padding-top: 5%; text-align: center; width: 25%;'>
+							<div class='alert alert-danger' role='alert'>
+									E-mail já cadastrado!
+							</div>
+					</div>
+					";
+			}else if(!empty($_GET) && $_GET['erro']==0){
+				echo "
+					<div class = 'container' style='padding-top: 5%; text-align: center; width: 25%;'>
+							<div class='alert alert-danger' role='alert'>
+									E-mail ou senha incorretos!
+							</div>
+					</div>
+					";
+
+			}
+		?>
+
 		<main>
 			<div class="w3-display-middle">
 				<div class = "w3-animate-opacity text-center"  style="margin-top:10px;">
@@ -151,9 +175,6 @@
 			</div>
 		</main>
 	</div>
-
 	<?php
 		rodape();
 	?>
-
-

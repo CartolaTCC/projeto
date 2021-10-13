@@ -1,8 +1,8 @@
 <?php
-  $mysqli = new mysqli('localhost', 'nomeBanco', 'senhaBanco', 'banco');
+  $mysqli = new mysqli('tcccartola', 'nomeBanco', 'senhaBanco', 'banco');
 
   $user = filter_input(INPUT_GET, 'nomeUsuario');
-  $sql = "SELECT * FROM `usuarios` WHERE `nomeUsuario` = '{$user}'"; 
+  $sql = "SELECT * FROM `usuarios` WHERE `nomeUsuario` = '{$user}'";
 
   $query = $mysqli->query( $sql ); //executo a query
 

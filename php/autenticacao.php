@@ -1,33 +1,66 @@
 <?php
-  if($_POST){
+  include "constSession.php";
+  include "funcoesEstruturais.php";
+  //Estrutura head
+  head();
+
+  if(!empty($_POST)){
+    include "conexao.php";
+    echo "Post cheio";
     $tipoForm = $_POST["tipoForm"];
-
+    //Se for 0 é login
     if($tipoForm == 0){
-      
-      session_start();
+    echo "Entrou no login";
+      $email = $_POST["emailLogin"];
+      $senha = md5($_POST["senhaLogin"]);
+      echo $email;
+      echo $senha;
+      $sql = "SELECT nomeUsuario FROM usuarios WHERE email=? AND senha=?";
 
-      //Aqui será feita a autenticação do usuário
+      if($stmt = mysqli_prepare($conexao, $sql)) {
 
-      $_SESSION[SESSAO] = "1";
+        mysqli_stmt_bind_param($stmt, "ss", $email, $senha);
+        mysqli_stmt_execute($stmt);
+        $resultado = mysqli_stmt_get_result($stmt);
 
-      header('Location: home.php');
+        if(mysqli_num_rows($resultado) == 1) {
+          $_SESSION[SESSAO] = "1";
+          echo "Deu certo";
+          //header('Location: home.php');
+        }else{
+          //header("location:index.php?erro=0");
+        }
+      }
+
+    //Se for 1 é cadastro
     }else{
       $email = $_POST["email"];
       $nomeUsuario = $_POST["nomeUsuario"];
-      $senha = $_POST["senha"];
-  
-      $select = "SELECT * FROM usuarios WHERE email like '%$email%'";
-  
-      $resultado = mysqli_query($conexao, $select);
-  
-      if(mysqli_num_rows($resultado) == 1){
-          // Inserir erro se e-mail já existir
-      }else{
-          $query = "INSERT INTO usuarios(email,nomeUsuario,senha ) VALUES ('$email', '$nomeUsuario', '$senha')";
-          
-          mysqli_query($conexao,$query);
+      $senha = md5($_POST["senha"]);
+
+      $sql = "SELECT nomeUsuario FROM usuarios WHERE email=?";
+
+      if($stmt = mysqli_prepare($conexao, $sql)) {
+
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        mysqli_stmt_execute($stmt);
+        $resultado = mysqli_stmt_get_result($stmt);
+
+        if(mysqli_num_rows($resultado) == 1) {
+          header('Location: index.php?erro=1');
+        }else{
+          $query = "INSERT INTO usuarios(email, nomeUsuario, senha) VALUES('$email', '$nomeUsuario', '$senha')";
+          mysqli_query($conexao, $query) or die(mysqli_error($conexao));
           header("location:index.php");
+        }
       }
     }
+      mysqli_close($conexao);
+      //fecha a conexão
+  }else {
+    header("location: index.php");
   }
+
+	//Rodapé da página
+  rodape();
 ?>

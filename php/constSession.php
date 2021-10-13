@@ -1,3 +1,4 @@
 <?php
-  define("SESSAO", "login");
+  $sessao=0;
+  define("SESSAO", $sessao);
 ?>

@@ -4,10 +4,10 @@
 	//Estrutura head
 	head();
 
-  //Se o usuário estiver logado
-  if(empty($_SESSION[SESSAO])){
+	//Se o usuário estiver logado
+  if($_SESSION[SESSAO]==1){
   	//Cabeçalho da página para usuários logados
-		cabecalhoUsuarioLogado();
+  	cabecalhoUsuarioLogado();
   }else{ //Se não estiver logado
     header('Location: index.php');
   }
