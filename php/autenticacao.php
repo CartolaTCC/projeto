@@ -6,15 +6,14 @@
 
   if(!empty($_POST)){
     include "conexao.php";
-    echo "Post cheio";
+
     $tipoForm = $_POST["tipoForm"];
     //Se for 0 é login
     if($tipoForm == 0){
-    echo "Entrou no login";
+
       $email = $_POST["emailLogin"];
       $senha = md5($_POST["senhaLogin"]);
-      echo $email;
-      echo $senha;
+
       $sql = "SELECT nomeUsuario FROM usuarios WHERE email=? AND senha=?";
 
       if($stmt = mysqli_prepare($conexao, $sql)) {
@@ -25,10 +24,10 @@
 
         if(mysqli_num_rows($resultado) == 1) {
           $_SESSION[SESSAO] = "1";
-          echo "Deu certo";
-          //header('Location: home.php');
+
+          header('Location: home.php');
         }else{
-          //header("location:index.php?erro=0");
+          header("location:index.php?erro=0");
         }
       }
 
