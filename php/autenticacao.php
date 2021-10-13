@@ -1,5 +1,4 @@
 <?php
-  include "constSession.php";
   include "funcoesEstruturais.php";
   //Estrutura head
   head();
@@ -23,7 +22,7 @@
         $resultado = mysqli_stmt_get_result($stmt);
 
         if(mysqli_num_rows($resultado) == 1) {
-          $_SESSION[SESSAO] = "1";
+          $_SESSION["usuario"] = "1";
 
           header('Location: home.php');
         }else{

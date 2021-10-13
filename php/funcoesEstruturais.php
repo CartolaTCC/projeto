@@ -80,7 +80,7 @@
 		$cabecalho .= "\t\t\t\t\t\t</button>";
 		$cabecalho .= "\t\t\t\t\t\t<div class='dropdown-menu dropdown-menu-right' aria-labelledby='dropdownMenuButton'>";
 		$cabecalho .= "\t\t\t\t\t\t\t<a class='dropdown-item' href='perfil.php'><img src='../img/foto.png' alt ='meu perfil' style='width: 30px;'/>Meu perfil</a>";
-		$cabecalho .= "\t\t\t\t\t\t\t<a class = 'dropdown-item' href = 'index.php'><img src = '../img/exit.png' alt = 'sair' style = 'width: 30px;'/>Sair</a>";
+		$cabecalho .= "\t\t\t\t\t\t\t<a class = 'dropdown-item' href = 'sair.php'><img src = '../img/exit.png' alt = 'sair' style = 'width: 30px;'/>Sair</a>";
 		$cabecalho .= "\t\t\t\t\t\t</div>";
 		$cabecalho .= "\t\t\t\t\t</div>";
 		$cabecalho .= "\t\t\t\t</li>";

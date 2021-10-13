@@ -1,11 +1,10 @@
 <?php
 	include "funcoesEstruturais.php";
-	include "constSession.php";
 	//Estrutura head
 	head();
 
   //Se o usuário estiver logado
-	if($_SESSION[SESSAO]==1){
+	if(isset($_SESSION["usuario"])){
 		header('Location: home.php');
 	}
 ?>
