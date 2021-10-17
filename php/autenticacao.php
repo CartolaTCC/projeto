@@ -13,7 +13,7 @@
       $email = $_POST["emailLogin"];
       $senha = md5($_POST["senhaLogin"]);
 
-      $sql = "SELECT nomeUsuario FROM usuarios WHERE email=? AND senha=?";
+      $sql = "SELECT codigo FROM usuarios WHERE email=? AND senha=?";
 
       if($stmt = mysqli_prepare($conexao, $sql)) {
 
@@ -22,13 +22,27 @@
         $resultado = mysqli_stmt_get_result($stmt);
 
         if(mysqli_num_rows($resultado) == 1) {
-          $_SESSION["usuario"] = "1";
+
+          $codigo = $conexao->prepare("SELECT codigo FROM usuarios WHERE email=$email AND senha=$senha");
+          $codigo->execute();
+
+          while($linha = $codigo->fechObject()){
+            $_SESSION["usuario"] = $linha["nomeUsuario"];
+            echo $linha["nomeUsuario"];
+          }
+
+          /*$sql = "SELECT codigo FROM usuarios WHERE email=$email AND senha=$senha";
+          $codigo = mysqli_query($conexao, $sql);
+
+          while($linha = mysqli_fetch_assoc($codigo)){
+            $_SESSION["usuario"] = $linha["nomeUsuario"];
+          }*/
 
           if(isset($_POST['lembrar_usuario'])){
             lembrar_usuario($email);
           }
 
-          header('Location: home.php');
+          //header('Location: home.php');
         }else{
           header("location:index.php?erro=0");
         }
@@ -40,7 +54,7 @@
       $nomeUsuario = $_POST["nomeUsuario"];
       $senha = md5($_POST["senha"]);
 
-      $sql = "SELECT nomeUsuario FROM usuarios WHERE email=?";
+      $sql = "SELECT codigo FROM usuarios WHERE email=?";
 
       if($stmt = mysqli_prepare($conexao, $sql)) {
 

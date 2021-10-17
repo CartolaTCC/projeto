@@ -1,5 +1,6 @@
 <?php
 	include "funcoesEstruturais.php";
+	include "conexao.php";
 	//Estrutura head
 	head();
 
@@ -24,7 +25,12 @@
 				</div>
 
 				<div class="col-3">
-					<h1><b>Yuri Kanegae</b></h1>
+
+					<?php
+							echo '<h1><b>"'.$_SESSION["Usuario"].'"</b></h1>';
+						}
+					?>
+
 					yurikanegae@gmail.com
 				</div>
 				<div class="col-1">
@@ -101,7 +107,7 @@
 			      <div class="modal-body">
 							<div class="row">
 								<div class="col-6">
-									<img src="../img/editarFoto.jpg" class="editarFotoPerfil" alt="editar foto de perfil">
+									<img src="../img/foto.png" class="editarFotoPerfil" alt="editar foto de perfil"><input type="file" name="fotoPerfil">
 								</div>
 								<div class="col">
 									<div class="row">
