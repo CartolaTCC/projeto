@@ -27,11 +27,11 @@
 				<div class="col-3">
 
 					<?php
-							echo '<h1><b>"'.$_SESSION["Usuario"].'"</b></h1>';
-						}
+						echo '<h1><b>'.$_SESSION["usuario"].'</b></h1>';
+						echo''.$_SESSION["email"].'';
 					?>
 
-					yurikanegae@gmail.com
+					
 				</div>
 				<div class="col-1">
 					<div class="row">
@@ -107,7 +107,7 @@
 			      <div class="modal-body">
 							<div class="row">
 								<div class="col-6">
-									<img src="../img/foto.png" class="editarFotoPerfil" alt="editar foto de perfil"><input type="file" name="fotoPerfil">
+									<img src="../img/foto.png" class="editarFotoPerfil" alt="editar foto de perfil">
 								</div>
 								<div class="col">
 									<div class="row">
@@ -116,7 +116,9 @@
 										</label>
 									</div>
 									<div class="row">
-										<input type="text" name="nomeUsuario" id="nomeUsuario" value="Yuri Kanegae"/>
+  										<?php
+											echo'<input type="text" name="nomeUsuario" id="nomeUsuario" value="'.$_SESSION["usuario"].'"/>';
+  										?>
 									</div>
 									<div class="row">
 										<label for="emailUsuario" class="labelEditar">
@@ -124,7 +126,9 @@
 										</label>
 									</div>
 									<div class="row">
-										<input type="email" name="emailUsuario" id="emailUsuario" value="yurikanegae@gmail.com"/>
+										<?php
+											echo'<input type="email" name="emailUsuario" id="emailUsuario" value="'.$_SESSION["email"].'"/>';
+										?>
 									</div>
 									<div class="row">
 										<label for="senhaUsuario" class="labelEditar">

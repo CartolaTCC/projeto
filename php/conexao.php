@@ -1,8 +1,13 @@
 <?php
-  $host = "db4free.net:3306";
+  /* $host = "db4free.net:3306";
   $bd = "bdcartola";
   $usuario = "tcccartola";
-  $senha = "arymeuanr";
+  $senha = "arymeuanr"; */
+
+  $host = "localhost:3307";
+  $bd = "dbcartola";
+  $usuario = "root";
+  $senha = "usbw"; 
 
   $conexao = mysqli_connect($host,$usuario,$senha,$bd);
 
