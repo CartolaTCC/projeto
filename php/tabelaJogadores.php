@@ -332,7 +332,6 @@ $(".select").html(HTML);
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
                   ESCALACAO += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>'+dadosJogador[16]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
-									console.log(dadosJogador);
 
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
