@@ -14,7 +14,7 @@
 <script src='https://momentjs.com/downloads/moment.min.js'></script>
 <script>
 	$.ajax({
-		url: 'https://api.cartolafc.globo.com/rodadas',
+		url: 'http://cartolatccapi.herokuapp.com/rodadas',
 		timeout: 3000,
 		method: 'GET',
 		dataType: 'json',
