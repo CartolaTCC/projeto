@@ -1,5 +1,6 @@
 <?php
 	include "funcoesEstruturais.php";
+	include "conexao.php";
 	//Estrutura head
 	head();
 
@@ -24,8 +25,13 @@
 				</div>
 
 				<div class="col-3">
-					<h1><b>Yuri Kanegae</b></h1>
-					yurikanegae@gmail.com
+
+					<?php
+						echo '<h1><b>'.$_SESSION["usuario"].'</b></h1>';
+						echo''.$_SESSION["email"].'';
+					?>
+
+					
 				</div>
 				<div class="col-1">
 					<div class="row">
@@ -101,7 +107,7 @@
 			      <div class="modal-body">
 							<div class="row">
 								<div class="col-6">
-									<img src="../img/editarFoto.jpg" class="editarFotoPerfil" alt="editar foto de perfil">
+									<img src="../img/foto.png" class="editarFotoPerfil" alt="editar foto de perfil">
 								</div>
 								<div class="col">
 									<div class="row">
@@ -110,7 +116,9 @@
 										</label>
 									</div>
 									<div class="row">
-										<input type="text" name="nomeUsuario" id="nomeUsuario" value="Yuri Kanegae"/>
+  										<?php
+											echo'<input type="text" name="nomeUsuario" id="nomeUsuario" value="'.$_SESSION["usuario"].'"/>';
+  										?>
 									</div>
 									<div class="row">
 										<label for="emailUsuario" class="labelEditar">
@@ -118,7 +126,9 @@
 										</label>
 									</div>
 									<div class="row">
-										<input type="email" name="emailUsuario" id="emailUsuario" value="yurikanegae@gmail.com"/>
+										<?php
+											echo'<input type="email" name="emailUsuario" id="emailUsuario" value="'.$_SESSION["email"].'"/>';
+										?>
 									</div>
 									<div class="row">
 										<label for="senhaUsuario" class="labelEditar">

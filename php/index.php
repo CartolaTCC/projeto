@@ -34,8 +34,8 @@
 									+'<div class="input-group-prepend">'
 										+'<label for="email"><div class="input-group-text"><i class = "material-icons">email</i></div></label>'
 									+'</div>'
-									<?php $lembranca = (isset($_COOKIE["cookieUser"])) ? $_COOKIE['cookieUser'] : "";?>
-									+'<input type="text" class="form-control" id="email" name="emailLogin" placeholder="E-mail" value=".<?php echo $lembranca ?>." required>'
+									<?php $lembranca = (isset($_COOKIE["cookieUser"])) ? $_COOKIE['cookieUser'] : "E-mail";?>
+									+'<input type="text" class="form-control" id="email" name="emailLogin" value=".<?php echo $lembranca ?>." required>'
 								+'</div>'
 							+'</div>'
 						+'</div>'
@@ -112,7 +112,7 @@
 								+'<div class="input-group-prepend">'
 									+'<div class="input-group-text"><i class = "material-icons">lock</i></div>'
 								+'</div>'
-								+'<input type="password" class="form-control" id="senhaConfirmada" placeholder="Confirmar senha">'
+								+'<input type="password" class="form-control" id="senhaConfirmada" name="confirmaSenha" placeholder="Confirmar senha">'
 							+'</div>'
 						+'</div>'
 					+'</div>'
@@ -136,7 +136,7 @@
 				echo "
 					<div class = 'container' style='padding-top: 5%; text-align: center; width: 25%;'>
 							<div class='alert alert-danger' role='alert'>
-									E-mail já cadastrado!
+									E-mail ou nome já cadastrado!
 							</div>
 					</div>
 					";
@@ -149,6 +149,22 @@
 					</div>
 					";
 
+			}else if(!empty($_GET) && $_GET['erro']==2){
+				echo "
+					<div class = 'container' style='padding-top: 5%; text-align: center; width: 25%;'>
+							<div class='alert alert-danger' role='alert'>
+									Senha e confirmar senha não correspondem!
+							</div>
+					</div>
+					";
+			}else if(!empty($_GET) && $_GET['erro']==3){
+				echo "
+					<div class = 'container' style='padding-top: 5%; text-align: center; width: 25%;'>
+							<div class='alert alert-success' role='alert'>
+									Cadastro bem sucedido!
+							</div>
+					</div>
+					";
 			}
 		?>
 
@@ -177,5 +193,4 @@
 	</div>
 	<?php
 		rodape();
-
 	?>
