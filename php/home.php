@@ -14,7 +14,7 @@
 <script src='http://momentjs.com/downloads/moment.min.js'></script>
 <script>
 	$.ajax({
-		url: 'http://cartolatccapi.herokuapp.com/rodadas',
+		url: 'https://cartolatccapi.herokuapp.com/rodadas',
 		timeout: 3000,
 		method: 'GET',
 		dataType: 'json',
