@@ -11,7 +11,7 @@
 			header('Location: index.php');
 	}
 ?>
-<script src='http://momentjs.com/downloads/moment.min.js'></script>
+<script src='https://momentjs.com/downloads/moment.min.js'></script>
 <script>
 	$.ajax({
 		url: 'https://cartolatccapi.herokuapp.com/rodadas',
