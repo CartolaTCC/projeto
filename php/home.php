@@ -22,7 +22,7 @@
 			for (var i = 0; i < 38; i++) {
 				if(moment().isBetween(dados[i].inicio, dados[i].fim)){
 					var rodada = dados[i].rodada_id;
-					var link = "https://api.cartolafc.globo.com/partidas/"
+					var link = "https://cartolatccapi.herokuapp.com/partidas/"
 					var urlAPI = link + rodada
 
 					$.ajax({
@@ -34,12 +34,12 @@
 							"accept": "application/json",
 							"Access-Control-Allow-Origin":"*"
 						},
-						success: function(dados){	
+						success: function(dados){
 							var HTML = "";
-							for (var i = 0; i < 10; i++) {																			
+							for (var i = 0; i < 10; i++) {
 								var mandanteID = dados.partidas[i].clube_casa_id;
 								var visitanteID = dados.partidas[i].clube_visitante_id;
-								
+
 								if(dados.partidas[i].placar_oficial_mandante){
 									HTML += '<div class = "jogo_container offset-1 col-10 jogo_card">';
 									HTML += '<div class = "infoJogo">';
@@ -51,7 +51,7 @@
 									HTML += ''+ dados.clubes[mandanteID].nome +'';
 									HTML += '</div>';
 									HTML += '<div class = "col" style = "text-align: center;  height: 100%; margin: auto 0;">';
-									HTML += '<h1>'+ dados.partidas[i].placar_oficial_mandante +' <b>  X  </b>'+ dados.partidas[i].placar_oficial_visitante +'</h1>';				
+									HTML += '<h1>'+ dados.partidas[i].placar_oficial_mandante +' <b>  X  </b>'+ dados.partidas[i].placar_oficial_visitante +'</h1>';
 									HTML += '</div>';
 									HTML += '<div class = "col" style = "text-align: right;  height: 100%; margin: auto 0;">';
 									HTML += ''+ dados.clubes[visitanteID].nome +'';
@@ -63,13 +63,13 @@
 									HTML += '</div>';
 									HTML += '</div> <br/>';
 									var result = document.getElementById("pagina").innerHTML = HTML
-								}							
+								}
 							}
 						}
 					});
-				}else if(moment(dados[i].inicio).isAfter()){ 
+				}else if(moment(dados[i].inicio).isAfter()){
 					var rodada = dados[i-1].rodada_id;
-					var link = "https://api.cartolafc.globo.com/partidas/"
+					var link = "https://cartolatccapi.herokuapp.com/partidas/"
 					var urlAPI = link + rodada
 
 					$.ajax({
@@ -77,12 +77,12 @@
 						timeout: 3000,
 						method: 'GET',
 						dataType: 'json',
-						success: function(dados){	
+						success: function(dados){
 							var HTML = "";
-							for (var i = 0; i < 10; i++) {																			
+							for (var i = 0; i < 10; i++) {
 								var mandanteID = dados.partidas[i].clube_casa_id;
 								var visitanteID = dados.partidas[i].clube_visitante_id;
-								
+
 								if(dados.partidas[i].placar_oficial_mandante){
 									HTML += '<div class = "jogo_container offset-1 col-10 jogo_card">';
 									HTML += '<div class = "infoJogo">';
@@ -94,7 +94,7 @@
 									HTML += ''+ dados.clubes[mandanteID].nome +'';
 									HTML += '</div>';
 									HTML += '<div class = "col" style = "text-align: center;  height: 100%; margin: auto 0;">';
-									HTML += '<h1>'+ dados.partidas[i].placar_oficial_mandante +' <b>  X  </b>'+ dados.partidas[i].placar_oficial_visitante +'</h1>';				
+									HTML += '<h1>'+ dados.partidas[i].placar_oficial_mandante +' <b>  X  </b>'+ dados.partidas[i].placar_oficial_visitante +'</h1>';
 									HTML += '</div>';
 									HTML += '<div class = "col" style = "text-align: right;  height: 100%; margin: auto 0;">';
 									HTML += ''+ dados.clubes[visitanteID].nome +'';
@@ -106,14 +106,14 @@
 									HTML += '</div>';
 									HTML += '</div> <br/>';
 									var result = document.getElementById("pagina").innerHTML = HTML
-								}							
+								}
 							}
 						}
 					});
 				}
 			}
 		}
-	});		 
+	});
 </script>
 <h1 class = "text-center pageTitle"><b>RODADAS DA SEMANA</b></h1>
 <div id = "pagina" class = "container">
