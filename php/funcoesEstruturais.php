@@ -28,7 +28,7 @@
 		$head .= "\t\t<script src='../js/jquery-3.5.1.min.js'></script>\n\n";
 		$head .= "\t\t<script src='../js/bootstrap.min.js' ></script>\n\n";
 		$head .= "\t\t<script src='../js/popper.min.js'></script>\n\n";
-		$head .= "\t\t<script src='../js/MD5.js'></script>\n\n";
+		$head .= "\t\t<script src='../js/md5.js'></script>\n\n";
 
 		$head .= "\t</head>\n";
 
