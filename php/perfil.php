@@ -31,7 +31,7 @@
 						echo''.$_SESSION["email"].'';
 					?>
 
-					
+
 				</div>
 				<div class="col-1">
 					<div class="row">
@@ -181,10 +181,10 @@
 							</div>
 							<div class="row">
 								<div class="col-6">
-									<input type="email" name="emailSinc" id="emailSinc" value="yurikanegae@gmail.com" />
+									<input type="email" name="emailSinc" id="emailSinc" placeholder="E-mail"/>
 								</div>
 								<div class"col">
-									<input type="password" name="senhaSinc" id="senhaSinc" value="*******" class="colunaModal"/>
+									<input type="password" name="senhaSinc" id="senhaSinc" placeholder="Senha" class="colunaModal"/>
 								</div>
 							</div>
 			      </div>

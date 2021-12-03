@@ -15,7 +15,7 @@
 <body onload = "selectScouts()">
     <!--Escopo principal-->
     <main>
-        <h1 class = "text-center pageTitle"><b>TABELA DOS JOGADORES</b></h1>
+        <h1 class = "text-center pageTitle"><b>ESCALAÇÃO AUTOMÁTICA</b></h1>
 
         <!--Form de atualização-->
         <form>
@@ -219,7 +219,6 @@ $(".select").html(HTML);
                   +'<th scope = "col" class="thRanking">Posição</th>'
                   +'<th scope = "col" class="thRanking">Jogador</th>'
                   +'<th scope = "col" class="thRanking">Apelido</th>'
-                  +'<th scope = "col" class="thRanking">Clube</th>'
                   +'<th scope = "col" class="thRanking">Preço</th>'
                   +'<th scope = "col" class="thRanking">Pontuação</th>'
               +'</tr>';
@@ -236,7 +235,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>Goleiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
@@ -255,7 +254,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>atacante</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
@@ -274,7 +273,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>Lateral</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
@@ -293,7 +292,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>Meia</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
@@ -312,7 +311,7 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td></td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>Zagueiro</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
                 }
@@ -331,11 +330,11 @@ $(".select").html(HTML);
       				      dataType: 'json',
       				      data: {"id":idJogador, "rodada_atual": rodada_atual},
         				success: function(dadosJogador){
-                  ESCALACAO += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>'+dadosJogador[16]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
+                  ESCALACAO += '<tr><td>Técnico</td><td>'+dadosJogador[2]+'</td><td>'+dadosJogador[4]+'</td><td>C$'+dadosJogador[11].toFixed(2)+'</td><td>'+dadosJogador[12].toFixed(2)+'</td></tr>';
 
 									SOMAPONTUACAO += parseFloat(dadosJogador[12]);
 									SOMAPRECO += parseFloat(dadosJogador[11]);
-									ESCALACAO += '<tr><td colspan="4"><b>Total</b></td><td>C$'+SOMAPRECO.toFixed(2)+'</td><td>'+SOMAPONTUACAO.toFixed(2)+'</td></tr>';
+									ESCALACAO += '<tr><td colspan="3"><b>Total</b></td><td>C$'+SOMAPRECO.toFixed(2)+'</td><td>'+SOMAPONTUACAO.toFixed(2)+'</td></tr>';
 									$("#tbody").html(ESCALACAO);
                 }
               });

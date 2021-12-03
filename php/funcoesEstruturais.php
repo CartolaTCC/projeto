@@ -50,7 +50,7 @@
 		$cabecalho .= "\t\t\t<!--Elementos centrais-->";
 		$cabecalho .= "\t\t\t<ul class='navbar-nav ml-auto'>";
 		$cabecalho .= "\t\t\t\t<li class='nav-item'>";
-		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='tabelaJogadores.php'>Ranking</a>";
+		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='Ranking.php'>Ranking</a>";
 		$cabecalho .= "\t\t\t\t</li>";
 
 		$cabecalho .= "\t\t\t\t<li class='nav-item'>";
@@ -60,7 +60,7 @@
 		$cabecalho .= "\t\t\t\t</li>";
 
 		$cabecalho .= "\t\t\t\t<li class='nav-item'>";
-		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='escalacao.php'>Escalação</a>";
+		$cabecalho .= "\t\t\t\t\t<a class='nav-link' href='tabelaJogadores.php'>Escalação</a>";
 		$cabecalho .= "\t\t\t\t</li>";
 		$cabecalho .= "\t\t\t</ul>";
 
